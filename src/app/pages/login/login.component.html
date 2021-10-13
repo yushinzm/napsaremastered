@@ -1,0 +1,101 @@
+<div style="height: 100vh;">
+<mat-toolbar color="primary" class="mat-elevation-z4">
+  <a mat-button href="#">
+    <img style="height: 40px; width:40px; border-radius: 50px;"
+      src="https://play-lh.googleusercontent.com/L3oNyCqI9CKB_lULpRzQHqNDeCZ_jBsloc9r8qNZ_uljnKgwc6-h2j68FkXpENSnTsw"
+      alt="" />
+  </a>
+  <span>
+    <h6 class="company_name">
+      NATIONAL PENSION<br />SCHEME AUTHORITY<br />
+      <small>Be smart, secure your future</small>
+    </h6>
+  </span>
+  <span class="example-spacer"></span>
+  <a color="accent" mat-raised-button href="#">NAPSA HOME</a>
+</mat-toolbar>
+<div class="container_2">
+  <div class="card_holder">
+    <mat-card class="main_card">
+      <div class="items card_image">
+        <ngb-carousel *ngIf="images" style="height: 100% !important">
+          <ng-template ngbSlide style="height: 100% !important; object-fit: cover">
+            <div style="height: 100% !important" class="picsum-img-wrapper">
+              <img style="height: 100%" [src]="images[0]" alt="Random first slide" />
+            </div>
+            <div class="carousel-caption">
+              <h3>First slide label</h3>
+              <p>
+                Nulla vitae elit libero, a pharetra augue mollis interdum.
+              </p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div style="height: 100% !important" class="picsum-img-wrapper">
+              <img [src]="images[1]" alt="Random second slide" />
+            </div>
+            <div class="carousel-caption">
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div style="height: 100% !important" class="picsum-img-wrapper">
+              <img [src]="images[2]" alt="Random third slide" />
+            </div>
+            <div class="carousel-caption">
+              <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl
+                consectetur.
+              </p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div style="height: 100% !important" class="picsum-img-wrapper">
+              <img [src]="images[3]" alt="Random third slide" />
+            </div>
+            <div class="carousel-caption">
+              <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl
+                consectetur.
+              </p>
+            </div>
+          </ng-template>
+        </ngb-carousel>
+      </div>
+      <div class="items card_login">
+        <mat-card-title>WELCOME TO NAPSA E-SERVICES</mat-card-title>
+        <mat-card-subtitle>PLEASE LOGIN</mat-card-subtitle>
+        <form class="login-form">
+          <br /><br />
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Social Security Number</mat-label>
+            <input matInput placeholder="TPIN Number" value="">
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput placeholder="Enter password" value="">
+          </mat-form-field>
+          <div class="buttonholder">
+            <span style="text-align: left !important;">
+              <mat-checkbox color="primary" formControlName="pepperoni">Remember me </mat-checkbox>
+            </span>
+            <span>
+              <button mat-raised-button color="primary">LOGIN</button>
+            </span>
+          </div>
+          <div style="width: 100%; text-align: left;">
+            <button routerLink="/" mat-button>FORGOT YOUR PASSWORD?</button>
+          </div>
+          <br />
+          <button routerLink="/register" mat-button>DON'T HAVE AN ACCOUNT? SIGN UP</button>
+        </form>
+      </div>
+    </mat-card>
+  </div>
+</div>
+
+</div>
