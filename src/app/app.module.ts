@@ -8,12 +8,14 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AllMaterialModule } from './materialui/material-modules';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
